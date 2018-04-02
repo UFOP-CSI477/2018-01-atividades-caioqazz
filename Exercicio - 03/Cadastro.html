@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+</head>
+<body>
+<h1> Dados de Cadastro</h1>
+<!-- method= get/post // -->
+<form method="post" action="validar.html">
+	
+	<label for="nome">Nome</label>
+	<input type="text" name="nome" ><br>
+
+	<label for="datanasc">Data de Nascimento</label>
+	<input type="text" name="datanasc"  placeholder="dd/mm/aaaa" ><br>
+
+	
+	<label for="telefone">Telefone</label>
+	<input type="text" name="telefone" placeholder="DDD+Numero"><br>
+
+	<label for="cel">Celular</label>
+	<input type="text" name="cel" placeholder="DDD+Numero"><br>
+	
+	<label for="CPF">CPF</label>
+	<input type="text" name="CPF" maxlength="11" placeholder="999.999.999-00"><br>
+
+	<label for="id">Identidade</label>
+	<input type="text" name="id" maxlength="11"><br>
+
+	<br>
+	<label for="end">Endereço:</label><br>
+	
+	<label for="Rua">Rua</label>
+	<input type="text" name="rua"><br>
+
+	<label for="bairro">Bairro</label>
+	<input type="text" name="bairro"><br>
+	
+	<label for="cidade">Cidades</label>
+	<select name="cidade">
+	<option value="0">Selecione:</option>
+	<option value="1"> João Monlevade</option>
+	<option value="2" > Itabira</option>
+	<option value="3"> Santa Barbara</option>	
+	</select><br>
+
+	<label for="estado">Estado</label>
+	<select name="estado">
+	<option value="0">Selecione:</option>
+	<option value="1">MG</option>
+	<option value="2" >SP</option>
+	<option value="3">RJ</option>	
+	</select><br>
+
+	<br>
+	<br>
+	<label for="genero">Gênero:</label><br>
+	<label for="feminino"> Feminino</label>
+	<input type="radio" name="genero" id="feminino" value="F"><br>
+	<label for="masculino"> Masculino</label>
+	<input type="radio" name="genero" id="masculino" value="M"><br>
+	<label for="naobinario">Não Binário </label>
+	<input type="radio" name="genero" id="naobinario" value="NB"><br>
+
+	<br>
+	<label for="ec">Estado civil:</label><br>
+	<label for="solteiro"> Solteiro</label>
+	<input type="radio" name="ec" id="solteiro" value="S"><br>
+	<label for="casado"> Masculino</label>
+	<input type="radio" name="ec" id="casado" value="C"><br>
+	<label for="viuvo">Viuvo </label>
+	<input type="radio" name="ec" id="viuvo" value="V"><br>
+	<label for="divorciado">Divorciado </label>
+	<input type="radio" name="ec" id="divorciado" value="D"><br>
+	
+	<br>
+	<label for="area"> Areas de Interesse:</label><br>
+
+	<label for="web">Web</label>
+	<input type="checkbox" name="area" id="web"><br>
+	
+	<label for="bd">BD</label>
+	<input type="checkbox" name="area" id="bd"><br>
+
+	<label for="redes">Redes</label>
+	<input type="checkbox" name="area" id="redes"><br>
+
+	<label for="ot">Otimização</label>
+	<input type="checkbox" name="area" id="ot"><br>
+	
+	<br>
+
+	
+
+	
+	<input type="submit" value="Cadastrar">
+	<input type="reset" value="Limpar"><br>
+
+		<br>
+	<a href="Principal.html">Voltar </a>
+
+</form>
+</body>
+</html>
