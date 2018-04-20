@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro</title>
+	  <script src="./jquery/jquery-3.3.1.slim.js"></script>
+    <script src="./jquery/funcoes.js"></script>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+</head>
+<body>
+	
+<center><h1> Dados de Cadastro</h1></center>
+
+<!-- method= get/post // -->
+
+ <div class="row">
+
+    <div class="col-md-3">
+    	
+    </div>
+
+  <div class="col-md-6">
+
+		<form method="post" action="validar.html">
+	
+			<div class="form-group" id="nome-group">
+     
+     			<label  for="nome">Nome</label>
+     			<input type="text" name="nome" class="form-control">
+     
+
+    			<div class="alert alert-danger" style="display: none" id="nome-alerta">
+          			<p>Informe seu nome corretamente.</p>
+     			</div>
+
+    		</div>
+
+    		<div class="form-group" id="datanasc-group">	
+				
+				<label   for="datanasc">Data de Nascimento</label>
+				<input type="text" name="datanasc"  placeholder="dd/mm/aaaa" class="form-control" >
+				
+				<div class="alert alert-danger" style="display: none" id="datanasc-alerta">
+          			<p>Informe sua data de nascimento corretamente.</p>
+     			</div>
+
+			</div>
+
+			<div class="form-group" id="telefone-group">
+	
+				<label for="telefone">Telefone</label>
+				<input type="text" name="telefone" placeholder="DDD+Numero" class="form-control" >
+			
+				<div class="alert alert-danger" style="display: none" id="telefone-alerta">
+          			<p>Informe seu telefone corretamente.</p>
+     			</div>
+
+			</div>
+	
+
+			<div class="form-group" id="cel-group">
+				
+				<label  for="cel">Celular</label>
+				<input type="text" name="cel" placeholder="DDD+Numero" class="form-control" class="form-control" >
+
+				<div class="alert alert-danger" style="display: none" id="cel-alerta">
+          			<p>Informe seu celular corretamente.</p>
+     			</div>
+
+			</div>
+
+
+			<div class="form-group" id="CPF-group">
+	
+				<label  for="CPF">CPF</label>
+				<input type="text" name="CPF" maxlength="11" placeholder="999.999.999-00" class="form-control" >
+
+				<div class="alert alert-danger" style="display: none" id="CPF-alerta">
+          			<p>Informe seu CPF corretamente.</p>
+     			</div>
+
+			</div>
+	
+
+
+
+			<div class="form-group" id="id-group">
+	
+				<label  for="id">Identidade</label>
+				<input type="text" name="id" maxlength="11" class="form-control" >
+
+				<div class="alert alert-danger" style="display: none" id="id-alerta">
+          			<p>Informe sua identidade corretamente.</p>
+     			</div>
+
+			</div>
+	
+
+			
+
+	<br>
+	<label  for="end">Endereço:</label><br>
+				<div class="form-group" id="rua-group">
+						<label for="Rua">Rua</label>
+						<input type="text" name="rua" class="form-control" >
+				
+
+					<div class="alert alert-danger" style="display: none" id="rua-alerta">
+          				<p>Informe sua rua corretamente.</p>
+     				</div>
+
+				</div>
+	
+				<div class="form-group" id="bairro-group">
+					
+					<label for="bairro">Bairro</label>
+					<input type="text" name="bairro" class="form-control" >
+				
+
+					<div class="alert alert-danger" style="display: none" id="bairro-alerta">
+          				<p>Informe seu bairro corretamente.</p>
+     				</div>
+
+				</div>
+	
+				<div class="form-group" id="cidade-group">
+					
+					<label for="cidade">Cidades</label>
+					<select name="cidade" class="form-control" id="cidade">
+					<option value="0">Selecione:</option>
+					<option value="1"> João Monlevade</option>
+					<option value="2" > Itabira</option>
+					<option value="3"> Santa Barbara</option>	
+					</select><br>
+				
+
+					<div class="alert alert-danger" style="display: none" id="cidade-alerta">
+          				<p>Informe sua cidade corretamente.</p>
+     				</div>
+
+				</div>
+				
+				<div class="form-group" id="estado-group">
+					
+					<label for="estado">Estado</label>
+					<select name="estado" class="form-control" id="estado">
+					<option value="0">Selecione:</option>
+					<option value="1">MG</option>
+					<option value="2" >SP</option>
+					<option value="3">RJ</option>	
+					</select><br>
+				
+
+					<div class="alert alert-danger" style="display: none" id="estado-alerta">
+          				<p>Informe seu estado corretamente.</p>
+     				</div>
+
+				</div>
+
+	
+
+			<br>
+			<label for="genero">Gênero:</label><br>
+	
+
+	 			<div class="radio" id="genero-group">
+					<label for="feminino"><input type="radio" name="genero" id="feminino" value="F" >Feminino</label><br> 
+					<label for="masculino"><input type="radio" name="genero" id="masculino" value="M">Masculino</label><br>
+					<label for="naobinario"><input type="radio" name="genero" id="naobinario" value="NB">Não Binário </label>
+					<br>
+
+
+
+					<div class="alert alert-danger" style="display: none" id="genero-alerta">
+          				<p>Informe seu genero corretamente.</p>
+     				</div>
+
+				 </div>
+	
+
+			<label for="ec">Estado civil:</label><br>
+				 <div class="radio" id="ec-group">
+				<label for="solteiro"><input type="radio" name="ec" id="solteiro" value="S">Solteiro</label><br> 
+				<label for="casado"><input type="radio" name="ec" id="casado" value="C"> Masculino</label><br>
+				<label for="viuvo"><input type="radio" name="ec" id="viuvo" value="V">Viuvo </label><br>
+				<label for="divorciado"><input type="radio" name="ec" id="divorciado" value="D">Divorciado </label><br>
+
+
+				<div class="alert alert-danger" style="display: none" id="ec-alerta">
+          				<p>Informe seu estado civil corretamente.</p>
+     				</div>
+
+				</div>
+
+
+
+	<br>
+
+	<label for="area"> Areas de Interesse:</label><br>
+	
+	<div class="checkbox">
+
+	<label for="web"><input type="checkbox" name="area" id="web"> Web</label><br>	
+	<label for="bd"><input type="checkbox" name="area" id="bd"> BD</label><br>	
+	<label for="redes"><input type="checkbox" name="area" id="redes">Redes</label><br>
+	<label for="ot"><input type="checkbox" name="area" id="ot">Otimização</label><br>
+
+	</div>
+	
+
+
+	
+ 	<button type="button" class="btn btn-success"  name="cadastrar" id="cadastrar">Cadastrar</button>
+	<button type="reset" class="btn btn-info">Limpar</button>
+
+		<br>
+		<br>
+	<a href="Principal.html" " class="btn btn-danger">Voltar </a>
+
+</form>
+ 
+ </div>
+
+    <div class="col-md-3">
+
+    </div>
+
+  </div>
+
+</body>
+</html>
