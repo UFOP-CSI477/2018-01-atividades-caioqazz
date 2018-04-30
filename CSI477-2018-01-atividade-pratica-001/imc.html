@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculo IMC</title>
+	<script src="./jquery/jquery-3.3.1.slim.js"></script>
+    <script src="./jquery/imc.js"></script>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+	<link href="./css/estilo-escala.css" rel="stylesheet">
+</head>
+<body>
+<h1>Calculo IMC</h1><br><br><br>
+	<div class="row">
+	
+		<div class="col-md-2">
+
+		</div>
+		
+		<div class="col-md-8">
+			<div class="form-group" id="peso-group">
+				
+				<label for="peso">Peso: </label>
+				<input type="text" name="peso" id="peso" placeholder="Ex:82.6" >
+
+				<div class="alert alert-danger" style="display: none"  id="peso-alert">
+					<p>Preencha o campo corretamente</p>
+				</div>
+			</div>
+
+
+			<div class="form-group" id="altura-group">
+				
+				<label for="altura">Altura: </label>
+				<input type="text" name="altura" id="altura" placeholder="Ex:1.65">
+
+				<div class="alert alert-danger" style="display: none"  id="altura-alert">
+					<p>Preencha o campo corretamente</p>
+				</div>
+			</div>
+
+			<button type="button" class="btn btn-success" id="button">Calcular</button>
+			<br><br><div class="form-group" id="res-group">			
+				<label for="res">IMC: </label>
+				<input type="text" name="res" id="res" placeholder="peso/altura²" >
+			</div>
+
+			<div id='val'><b></b></div>
+			<div id='valor'><b></b></div>
+
+		</div>
+			
+
+
+		<div class="col-md-2">
+
+		</div>
+
+
+	</div>
+</body>
+</html>

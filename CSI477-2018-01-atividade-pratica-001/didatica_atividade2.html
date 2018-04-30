@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Atividade Didática</title>
+	<script src="./jquery/jquery-3.3.1.slim.js"></script>
+    <script src="./jquery/didatica_e.js"></script>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+	<link href="./css/estilo_e.css" rel="stylesheet">
+</head>
+<body>
+<h1> Selecione o nome da figura</h1><br>
+<div class="container">
+	<div class="row">
+    <div class="col-md-2"></div>
+    
+    <div class="col-md-4">
+      <br>
+      <img src="./imgs/triangulo.png"   id="imagem1-group"><br>
+      
+      <div class="radio" id="imagem1-radio" >
+      <label for="triangulo1"><input type="radio" name="img1" id="triangulo1" value="V">Triângulo</label><br><br>
+      <label for="circulo1"><input type="radio" name="img1" id="circulo1" value="F">Circulo</label><br><br>  
+      <label for="quadrado1"><input type="radio" name="img1" id="quadrado1" value="F">Quadrado</label><br><br>  
+      <label for="retangulo1"><input type="radio" name="img1" id="retangulo1" value="F">Retângulo</label><br><br>
+
+      <div class="alert alert-danger" style="display: none"  id="imagem1-alert">
+          <p>Selecione uma opção</p>
+        </div>
+
+      <div class="btn btn-success" style="display: none"  id="imagem1-success">
+          <p>Resposta Correta</p>
+      </div>
+
+      <div class="alert alert-danger" style="display: none"  id="imagem1-fail">
+          <p>Resposta Incorreta</p>
+      </div>
+
+      </div>
+      <hr/>
+      <img src="./imgs/quadrado.png"   id="imagem2-group"><br>
+       <div class="radio" id="imagem2-radio">
+      <label for="quadrado2"><input type="radio" name="img2" id="quadrado2" value="V">Quadrado</label><br><br>  
+      <label for="circulo2"><input type="radio" name="img2" id="circulo2" value="F">Circulo</label><br><br>  
+      <label for="retangulo2"><input type="radio" name="img2" id="retangulo2" value="F">Retângulo</label><br><br>  
+      <label for="triangulo2"><input type="radio" name="img2" id="triangulo2" value="F">Triângulo</label><br><br>
+      
+      <div class="alert alert-danger" style="display: none"  id="imagem2-alert">
+          <p>Selecione uma opção</p>
+        </div>
+
+       <div class="btn btn-success" style="display: none"  id="imagem2-success">
+          <p>Resposta correta</p>
+      </div>
+
+      <div class="alert alert-danger" style="display: none"  id="imagem2-fail">
+           <p>Resposta Incorreta</p>
+      </div>
+
+      </div>
+      <hr/>
+    </div>
+
+    <div class="col-md-4">
+      <br><img src="./imgs/circulo.png"   id="imagem3-group"><br>
+       
+       <div class="radio" id="imagem3-radio">
+      <label for="circulo3"><input type="radio" name="img3" id="circulo3" value="V">Circulo</label><br><br>  
+      <label for="triangulo3"><input type="radio" name="img3" id="triangulo3" value="F">Triângulo</label><br><br>
+      <label for="retangulo3"><input type="radio" name="img3" id="retangulo3" value="F">Retângulo</label><br><br>  
+      <label for="quadrado3"><input type="radio" name="img3" id="quadrado3" value="F">Quadrado</label><br><br>  
+
+      <div class="alert alert-danger" style="display: none"  id="imagem3-alert">
+          <p>Selecione uma opção</p>
+        </div>
+
+      <div class="btn btn-success" style="display: none"  id="imagem3-success">
+           <p>Resposta correta</p>
+      </div>
+
+      <div class="alert alert-danger" style="display: none"  id="imagem3-fail">
+          <p>Resposta Incorreta</p>
+      </div>
+
+      </div>
+
+      <hr/>
+      <img src="./imgs/retangulo.png"   id="imagem4-group"><br>
+
+       <div class="radio" id="imagem4-radio">
+      <label for="retangulo4"><input type="radio" name="img4" id="retangulo4" value="V">Retângulo</label><br><br>  
+      <label for="triangulo4"><input type="radio" name="img4" id="triangulo4" value="F">Triângulo</label><br><br>
+      <label for="quadrado4"><input type="radio" name="img4" id="quadrado4" value="F">Quadrado</label><br><br>  
+      <label for="circulo4"><input type="radio" name="img4" id="circulo4" value="F">Circulo</label><br><br>  
+
+      <div class="alert alert-danger" style="display: none"  id="imagem4-alert">
+          <p>Selecione uma opção</p>
+      </div>
+      
+      <div class="btn btn-success" style="display: none"  id="imagem4-success">
+          <p>Resposta correta</p>
+      </div>
+
+      <div class="alert alert-danger" style="display: none"  id="imagem4-fail">
+           <p>Resposta Incorreta</p>
+      </div>
+
+      </div>
+      <hr/>
+      <button type="button" class="btn btn-success mesmo-tamanho" id="button">Verificar</button>
+    </div>
+</div>
+
+    	
+    <div class="col-md-2"></div>
+
+	</div> 	 
+</body>
+</html>

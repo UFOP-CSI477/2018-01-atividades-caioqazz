@@ -1,0 +1,31 @@
+
+	h1{
+		font-size: 45px;
+		font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+		text-align: center;
+		background: lightblue;
+	}
+	
+	label{
+	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+
+	}
+	img {
+ 	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
+	
+	/*... outros atributos */
+	}
+	button{
+		float: right;
+	}
+	#genero-group{
+		font-size: 18px;
+	font-family:"Arial Black", "Arial Bold", Gadget, sans-serif;
+	text-align:center;
+	 float: center;
+	 margin: 0px auto;
+	}

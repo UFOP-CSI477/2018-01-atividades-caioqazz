@@ -1,0 +1,31 @@
+body{
+	
+		background: #E0FFFF;
+	
+}
+#valor{
+	font-size: 20px;
+
+}
+#val{
+	font-size: 20px;
+	font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+input{
+	font-size: 20px;
+}
+label{
+	font-size: 20px;
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		text-align: center;
+}
+h1{
+		font-size: 65px;
+		font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+		text-align: center;
+		
+	}
+div{
+
+     text-align: center;
+}

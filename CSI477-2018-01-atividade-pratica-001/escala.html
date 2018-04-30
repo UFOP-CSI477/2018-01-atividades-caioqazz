@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Escala Richter</title>
+	<script src="./jquery/jquery-3.3.1.slim.js"></script>
+    <script src="./jquery/escala.js"></script>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+	<link href="./css/estilo-escala.css" rel="stylesheet">
+</head>
+<body>
+	<center><h1> Escala Richter</h1></center>
+	
+	<div class="row">
+		<div class="col-md-2">
+		<p>.</p>
+		</div>
+		<div class="col-md-8"><br><br><br>
+			<label for="instrucao">Preencha os dados para o calculo:</label><br><br>
+			
+			<div class="form-group" id="amp-group">
+				<label for="A">Amplitude(A): </label>
+				<input type="text" name="A" id="A" placeholder="Em milimetros">
+
+				<div class="alert-danger" style="display: none" id="amp-alert">
+					<p>Preencha o campo corretamente.</p>
+				</div>
+			</div>
+
+			<div class="form-group" id="pressao-group">
+				<label for="P">Onda de Pressão Máxima(P): </label>
+				<input type="text" name="P"  id="P" placeholder="Em segundos">
+
+				<div class="alert-danger" style="display: none" id="pressao-alert">
+					<p>Preencha o campo corretamente.</p>
+				</div>
+			</div>
+			
+
+			<div class="form-group" id="super-group">
+				<label for="S">Onda Superficial(S): </label>
+				<input type="text" name="S"  id="S" placeholder="Em segundos"><br>
+				
+				<div class="alert-danger" style="display: none" id="super-alert">
+					<p>Preencha o campo corretamente.</p>
+				</div>
+			</div>
+			
+
+			<button type="button" class="btn btn-info" name="calculo" id="calculo">Calcular</button><br><br>
+			
+			<div class="form-group" id="res-group">
+				<label for="resultado">Magnitude (M): </label>
+				<input type="text" name="resultado" id="res" placeholder="M= log10 A + 3.log10(8.Δt) - 2,92" disabled >
+			</div>
+			
+				
+
+				<br><br><div id='valor'><b></b></div>
+
+		</div>
+		<div class="col-md-2">
+		
+		</div>
+	</div>
+</body>
+</html>

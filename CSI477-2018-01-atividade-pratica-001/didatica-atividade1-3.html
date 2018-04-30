@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Atividade Didática</title>
+	<script src="./jquery/jquery-3.3.1.slim.js"></script>
+    <script src="./jquery/didatica.js"></script>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+	<link href="./css/estilo.css" rel="stylesheet">
+</head>
+<body>
+<h1> Selecione a palavra que não pertence ao grupo</h1><br>
+
+	<div class="row">
+
+    	<div class="col-md-2">
+    	 <p>.</p>
+    	</div>
+
+    	<div class="radio" id="genero-group">
+  		<div class="col-md-4">
+
+  		<img src="./imgs/maquina.jpg"   id="imagem4"><br>
+		<label for="maquina"><input type="radio" name="genero" id="maquina" value="3" >Maquina de Lavar</label><br> <br> 
+
+  		<img src="./imgs/cadeira.jpg"  id="imagem2"><br>
+  		<label for="cadeira"><input type="radio" name="genero" id="cadeira" value="F">Cadeira de Praia</label><br><br>  
+  		</div>
+
+  	 	<div class="col-md-4">
+		<img src="./imgs/sombrinha.jpg" id="imagem3"><br>
+		<label for="sombrinha"><input type="radio" name="genero" id="sombrinha" value="F">Sombrinha</label><br><br>  
+
+		<img src="./imgs/oculos.jpg"  id="imagem1"><br>
+  		<label for="oculos"><input type="radio" name="genero" id="oculos" value="F">Oculos</label><br><br>  
+		
+
+		<br><br><button type="button" class="btn btn-info" name="avancar" id="avancar"  action = "imc.html">Avançar</button>
+		
+		<div class="alert alert-danger" style="display: none" id="genero-alerta">
+         <p>Selecione uma opção</p>
+     	</div>
+
+     	<div class="alert alert-danger" style="display: none" id="erro-alerta">
+         <p>Resposta Errada, Tente outra vez </p>
+     	</div>
+
+		</div>
+
+
+
+
+  		</div>
+
+  		<div class="col-md-2"> 	
+    	</div>
+
+	</div> 	 
+</body>
+</html>
