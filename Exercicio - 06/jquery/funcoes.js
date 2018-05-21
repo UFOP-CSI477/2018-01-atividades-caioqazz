@@ -40,6 +40,7 @@ $(document).ready(function(){
 
 
      $("button[name='cadastrar']").click(function(){
+        console.log( "merda");
          if(validarCampo("input[name='nome']","#nome-group", "#nome-alerta") &&
             validarCampo("input[name='datanasc']","#datanasc-group", "#datanasc-alerta") &&
             validarCampo("input[name='telefone']","#telefone-group", "#telefone-alerta") &&
