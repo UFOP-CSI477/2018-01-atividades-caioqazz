@@ -14,7 +14,7 @@
             <form method="post" action="router.php?op=2" class="form-group" id="login-form">
                 <div class="form-group"  id="name-group">
 
-                    <label for="name">Nome:</label>
+                    <label for="name">Email:</label>
                     <input type="text" name="name" class="form-control">
 
                     <div class="alert alert-danger" style="display: none" id="name-alert" >
