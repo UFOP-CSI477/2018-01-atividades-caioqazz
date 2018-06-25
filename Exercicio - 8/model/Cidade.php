@@ -20,7 +20,7 @@ class Cidade {
     $this->nome = $nome;
     $this->estado_id = $estado_id;
   }
-
+  
   public function __construct3($nome, $estado_id) {
     $this->id = 0;
     $this->nome = $nome;

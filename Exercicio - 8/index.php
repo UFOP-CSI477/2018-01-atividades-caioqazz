@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Sistema de Controle Acadêmico</title>
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <style type="text/css">
-    h1{
+                                 h1{
 
           font-size: 28pt;
           text-align: center;
           color: black;
     }
+    
     .test{
       font-size: 28pt;
       text-align: center;
       width: 95%;
-      float: center;     
+      float: center;
      }
      body{
       background: Snow ;
@@ -38,7 +39,7 @@
           <a href="router.php?op=4"><input type="button" class="btn btn-success test" value="Inserir alunos"></a><br>
           <a href="router.php?op=6"><input type="button" class="btn  btn-warning test" value="Inserir estados"></a><br>
           <a href="router.php?op=8"><input type="button" class="btn btn-info test" value="Inserir cidades"></a><br>
-        
+  
         </div>
         <div class="col-md-2"></div>
       </div>
